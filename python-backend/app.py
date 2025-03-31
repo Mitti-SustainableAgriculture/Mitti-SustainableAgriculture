@@ -2,9 +2,10 @@ from flask import Flask, request, jsonify
 from flask_cors import CORS
 import pickle
 import numpy as np
+import os  # Make sure to import this
 
 app = Flask(__name__)
-CORS(app)  # Enable CORS for all routes
+CORS(app, origins=["*"])  # Allow all origins for now
 
 # Load the trained model
 with open("model.pkl", "rb") as file:

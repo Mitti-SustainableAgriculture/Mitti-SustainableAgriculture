@@ -5,7 +5,7 @@ import axios from 'axios';
 import Image from 'next/image';
 import fertilizerImage from '/public/assets/fertilizerRC.jpg';
 
-const cropType = () => {
+const CropType = () => {
   const [formData, setFormData] = useState({
     nitrogen: '',
     phosphorus: '',
@@ -108,4 +108,4 @@ const cropType = () => {
   );
 };
 
-export default cropType;
+export default CropType;
