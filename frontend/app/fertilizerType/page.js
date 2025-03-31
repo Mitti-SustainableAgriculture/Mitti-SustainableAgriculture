@@ -24,7 +24,7 @@ export default function FertilizerForm() {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      const response = await fetch('https://python-fertilizer.onrender.com', {
+      const response = await fetch('https://python-fertilizer.onrender.com/predict', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
