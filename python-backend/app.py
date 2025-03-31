@@ -10,6 +10,11 @@ CORS(app)  # Enable CORS for all routes
 with open("model.pkl", "rb") as file:
     model = pickle.load(file)
 
+# Define a simple route for the root URL
+@app.route('/')
+def home():
+    return "Backend is running successfully!"
+
 # Define the route to handle form submissions
 @app.route('/predict', methods=['POST'])
 def predict():
@@ -54,4 +59,5 @@ def predict():
         return jsonify({'error': str(e)})
 
 if __name__ == '__main__':
-    app.run(debug=True, port=5001)
+    port = int(os.environ.get('PORT', 5001))  # Use PORT from environment variable for Render compatibility
+    app.run(host='0.0.0.0', port=port)
