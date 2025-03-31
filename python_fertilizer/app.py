@@ -14,6 +14,11 @@ with open('fertilizer_model.pkl', 'rb') as model_file:
 with open('label_encoder.pkl', 'rb') as encoder_file:
     label_encoder = pickle.load(encoder_file)
 
+# Define a simple route for the root URL
+@app.route('/')
+def home():
+    return "Backend is running successfully!"
+
 # Define the route to handle predictions
 @app.route('/predict', methods=['POST'])
 def predict():
