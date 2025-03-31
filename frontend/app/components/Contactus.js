@@ -12,11 +12,11 @@ const Contactus = () => {
                 className="absolute inset-0"
             />
             <div className="absolute inset-0 bg-white opacity-40 z-10"></div>
-            <div className='z-20 relative mx-16 pb-10 h-[100%]' id="contactus">
+            <div className='z-20 relative md:mx-16 mx-2 pb-10 h-[100%]' id="contactus">
                 <h1 className='text-center text-6xl font-bold mb-5 text-blue-800 pt-8'>Contact Us</h1>
                 <h2 className='text-center font-semibold text-2xl text-blue-600 pb-6'>We would love to hear from you!</h2>
-                <div className="bg-gray-50 px-10 flex justify-around items-center rounded-2xl py-4">
-                    <div className="info w-1/2">
+                <div className="bg-gray-50 md:px-10 px-5 flex md:flex-row flex-col justify-around items-center rounded-2xl py-4 md:gap-0 gap-10">
+                    <div className="info md:w-1/2 w-full">
                         <div>For inquiries, support, or feedback, please reach out to us through the following channels:</div>
                         <div className="items flex items-center gap-3 my-4">
                             <div className="icons">
@@ -83,7 +83,7 @@ const Contactus = () => {
                             </div>
                         </div>
                     </div>
-                    <div className="forms w-1/2 flex flex-col px-10">
+                    <div className="forms md:w-1/2 w-full flex flex-col md:px-10">
                         <h1 className='font-semibold text-2xl text-blue-500 text-center'>Send Message</h1>
                         <form action="/submit" method="get">
                             <div className="name my-5">
