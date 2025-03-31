@@ -1,1 +1,5 @@
+<<<<<<< HEAD
 web: gunicorn -b 0.0.0.0:5002 app:app
+=======
+web: gunicorn -b 0.0.0.0:5002 app:app
+>>>>>>> 0d5cb7b4813fb06463762b8e6c3ad702ae760ba0
