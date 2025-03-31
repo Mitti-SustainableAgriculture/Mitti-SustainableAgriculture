@@ -26,7 +26,7 @@ const cropType = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      const response = await axios.post('http://127.0.0.1:5001/predict', formData);
+      const response = await axios.post('https://mitti-sustainableagriculture.onrender.com', formData);
       setCrop(response.data.crop);
     } catch (error) {
       console.error('Error fetching the crop prediction:', error);
