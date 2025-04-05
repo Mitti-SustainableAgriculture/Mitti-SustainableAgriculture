@@ -55,7 +55,7 @@
      cd python-backend
      pip install -r requirements.txt
      ```
-   - For the backend:
+   - For the fertilizer backend:
      ```bash
      cd python_fertilizer
      pip install -r requirements.txt
@@ -76,6 +76,51 @@
      ```
 
 5. Deploy the microcontroller firmware using the Arduino IDE.
+
+---
+
+## 🔌 Hardware Setup
+
+### 🧪 Components Required
+
+| Component             | Quantity | Description                                     |
+|-----------------------|----------|-------------------------------------------------|
+| Arduino Uno/Nano      | 1        | Main microcontroller board                      |
+| Soil NPK Sensor       | 1        | Measures Nitrogen (N), Phosphorous (P), and Potassium (K) |
+| MAX485 Module         | 1        | RS-485 to TTL converter for NPK sensor         |
+| Soil Moisture Sensor  | 1        | Measures soil moisture level                   |
+| DHT11 Sensor          | 1        | Captures temperature and humidity              |
+| OLED Display (SSD1306)| 1        | I2C-based screen (128x32 or 128x64)            |
+| Jumper Wires          | -        | For circuit connections                        |
+| Breadboard            | 1        | For prototyping and testing                    |
+
+### 🔗 Pin Configuration
+
+| Sensor/Module       | Pin on Arduino | Notes                        |
+|---------------------|----------------|------------------------------|
+| MAX485 RO           | 2              | SoftwareSerial RX           |
+| MAX485 DI           | 3              | SoftwareSerial TX           |
+| MAX485 RE           | 8              | Enable pin                  |
+| MAX485 DE           | 7              | Direction control           |
+| Soil Moisture (AOUT)| A1             | Analog input                |
+| DHT11               | A0             | Digital data pin            |
+| OLED SDA            | A4             | I2C Data                    |
+| OLED SCL            | A5             | I2C Clock                   |
+
+### 🧠 Firmware
+
+The Arduino sketch is available in the `hardware` folder as `soil_monitor.ino`.
+
+#### ✅ Features:
+- Reads NPK values using Modbus communication.
+- Displays temperature, humidity, and soil moisture.
+- Outputs all sensor data to both Serial Monitor and OLED display.
+
+#### 🚦 Upload Instructions:
+1. Open `soil_monitor.ino` in the Arduino IDE.
+2. Select the correct **Board** and **COM Port**.
+3. Click **Upload** to flash the code to the microcontroller.
+4. Open the **Serial Monitor** at `9600 baud` to see real-time data.
 
 ---
 
