@@ -10,7 +10,7 @@ const Footer = () => {
                     </span>
                     <div className="separator h-10 w-[1px] bg-gray-500"></div>
                     <span className='text-slate-300 text-sm'>
-                        Copyright &copy; 2024 Mitti.com
+                        Copyright &copy; 2025 Mitti.com
                     </span>
                 </div>
                 <div className="right flex gap-3">

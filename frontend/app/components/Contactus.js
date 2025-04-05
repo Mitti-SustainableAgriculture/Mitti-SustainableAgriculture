@@ -63,7 +63,7 @@ const Contactus = () => {
                             </div>
                             <div className="content flex flex-col justify-center">
                                 <h1 className='font-semibold text-2xl text-blue-500'>Address</h1>
-                                <div className='text-[#36454F]'>Krishi Bhawan, New Delhi, India</div>
+                                <div className='text-[#36454F]'>New Delhi, India</div>
                             </div>
                         </div>
                         <div className="items flex items-center gap-3 my-4">
