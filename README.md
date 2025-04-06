@@ -94,19 +94,6 @@
 | Jumper Wires          | -        | For circuit connections                        |
 | Breadboard            | 1        | For prototyping and testing                    |
 
-### 🔗 Pin Configuration
-
-| Sensor/Module       | Pin on Arduino | Notes                        |
-|---------------------|----------------|------------------------------|
-| MAX485 RO           | 2              | SoftwareSerial RX           |
-| MAX485 DI           | 3              | SoftwareSerial TX           |
-| MAX485 RE           | 8              | Enable pin                  |
-| MAX485 DE           | 7              | Direction control           |
-| Soil Moisture (AOUT)| A1             | Analog input                |
-| DHT11               | A0             | Digital data pin            |
-| OLED SDA            | A4             | I2C Data                    |
-| OLED SCL            | A5             | I2C Clock                   |
-
 ### 🧠 Firmware
 
 The Arduino sketch is available in the `hardware` folder as `soil_monitor.ino`.
