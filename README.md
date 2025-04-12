@@ -41,7 +41,7 @@
 ### Steps
 1. Clone the repository:
    ```bash
-   git clone https://github.com/Abhijeet400/Mitti-SustainableAgriculture.git
+   https://github.com/Mitti-SustainableAgriculture/Mitti-SustainableAgriculture.git
    ```
 
 2. Install dependencies:
