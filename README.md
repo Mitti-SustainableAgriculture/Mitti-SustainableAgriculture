@@ -96,8 +96,6 @@
 
 ### 🧠 Firmware
 
-The Arduino sketch is available in the `hardware` folder as `soil_monitor.ino`.
-
 #### ✅ Features:
 - Reads NPK values using Modbus communication.
 - Displays temperature, humidity, and soil moisture.
